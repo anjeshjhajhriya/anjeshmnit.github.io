@@ -1,0 +1,68 @@
+<html> 
+    <head> 
+        <title>
+             CSS | animation-delay Property
+        </title>
+        <style> 
+            .geeks { 
+                font-size: 40px; 
+                text-align:center; 
+                font-weight:bold; 
+                color:#090; 
+                padding-bottom:5px; 
+                font-family:Times New Roman; 
+            } 
+              
+            .geeks1 { 
+                font-size:17px; 
+                font-weight:bold; 
+                text-align:center; 
+                font-family:Times New Roman; 
+            } 
+              
+            #one { 
+                animation-name: example; 
+                animation-duration: 10s; 
+                  
+            } 
+              
+            #two { 
+                animation-name: example; 
+                animation-duration: 10s; 
+                animation-delay: 10s; 
+            } 
+              
+            @keyframes example { 
+                from { 
+                    background-color: orange; 
+                } 
+                to { 
+                    background-color: white; 
+                } 
+            } 
+        </style> 
+    </head> 
+    <body> 
+        <div class = "geeks">
+            GeeksforGeeks
+        </div> 
+          
+        <div class = "geeks1">
+            A computer science portal for geeks
+        </div> 
+          
+        <!-- Animation of below h2 tag is not delayed
+            and begins as soon as the page is loaded 
+            in the browser -->
+        <h2 id="one">
+            Text animation without delayed.
+        </h2> 
+          
+        <!-- The animation of below h2 tag is delayed for 10s
+             That is, it begins after 10s of successfully 
+             loading of the current page -->
+        <h2 id="two">
+            Text animation with 10 second delay.
+        </h2> 
+    </body> 
+</html>                                   
